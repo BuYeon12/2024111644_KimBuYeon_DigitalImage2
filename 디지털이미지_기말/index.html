@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+    }
+
+    /* 섹션 0 스타일 */
+    #section0 {
+      background-color: #eee;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    swiper-slide a {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* 섹션 2 스타일 */
+    #section2 {
+      height: 100vh;
+    }
+
+    /* 섹션 3 스타일 */
+    #section3 {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; /* 배경색을 검은색으로 설정 */
+    }
+
+    #section3 video {
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 섹션 0: Swiper 슬라이드 -->
+  <div id="section0">
+    <swiper-container class="mySwiper" scrollbar-hide="true" autoplay="true" autoplay-delay="3000">
+      <swiper-slide><img src="image/screen image5.jpg.avif" alt="Slide 1"></swiper-slide>
+      <swiper-slide><img src="image/screen image6.png" alt="Slide 2"></swiper-slide>
+      <swiper-slide><img src="image/screen image4.png" alt="Slide 3"></swiper-slide>
+      <swiper-slide><img src="image/screen image3.jpg" alt="Slide 4"></swiper-slide>
+    </swiper-container>
+  </div>
+
+  <!-- 섹션 2: Swiper 슬라이더 -->
+  <div id="section2">
+    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true" css-mode="true">
+      <swiper-slide>
+        <!-- 이미지 클릭 시 다른 페이지로 이동 -->
+        <a href="page1.html">
+          <img src="image/offsite.jpeg" alt="Slide 1">
+        </a>
+      </swiper-slide>
+      <swiper-slide>
+        <a href="page2.html">
+          <img src="image/guma2.jpg" alt="Slide 2">
+        </a>
+      </swiper-slide>
+      <swiper-slide>
+        <a href="page3.html">
+          <img src="image/offsite-2.jpeg" alt="Slide 3">
+        </a>
+      </swiper-slide>>
+      <swiper-slide>
+        <a href="page4.html">
+          <img src="image/offsite-1.jpeg" alt="Slide 4">
+        </a>
+      </swiper-slide>>
+      <swiper-slide>
+        <a href="page5.html">
+          <img src="image/doran2.jpg" alt="Slide 5">
+        </a>
+      </swiper-slide>>
+    </swiper-container>
+  </div>
+
+
+  <!-- 섹션 3: MP4 비디오 -->
+  <div id="section3">
+    <video autoplay loop muted>
+      <source src="image/SKT T1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Swiper JS 스크립트 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>

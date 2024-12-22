@@ -1,0 +1,359 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(202, 0, 0);
+}
+  
+#section0 {
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 10vw;
+    padding: 0;
+}
+
+.frame {
+    position: relative;
+    width: 84%;
+    height: 15vh;
+    border: 5px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#section1 {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 0, 0);
+    margin-left: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+#section1 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* 변경: 오른쪽 영역을 100%로 설정하여 이미지가 중앙에 배치되도록 함 */
+    height: 100%;
+}
+
+#section1 .image-container {
+    text-align: center;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+    overflow: hidden;
+    width: 40%;  /* 이미지 프레임 크기를 설정 */
+    height: 60vh;  /* 이미지 프레임의 높이를 설정 */
+}
+
+#section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#section2 {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 10vw;
+    padding: 0;
+}
+
+#section2 .frame:first-of-type {
+    height: 20vh;
+    margin-bottom: 20px;
+}
+
+.red-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(202, 0, 0);
+}
+
+.text {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    top: 5px;
+}
+
+.name {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    z-index: 100;
+    top: 25%;
+}
+
+.real-name {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    z-index: 100;
+    top: 70%;
+}
+
+.hidden-frame {
+    display: none;
+    position: relative;
+    width: 84%;
+    height: 30vh;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hidden-frame .red-half {
+    width: 20%;
+    height: 200%;
+    background-color: rgb(202, 0, 0);
+}
+
+.hidden-frame .text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.hidden-frame .top,
+.hidden-frame .bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hidden-frame .divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+}
+
+.hidden-frame .divider0 {
+    top: 0%;
+}
+
+.hidden-frame .divider1 {
+    top: 16.67%;
+}
+
+.hidden-frame .divider2 {
+    top: 33.33%;
+}
+
+.hidden-frame .divider3 {
+    top: 50%;
+}
+
+.hidden-frame .divider4 {
+    top: 66.67%;
+}
+
+.hidden-frame .divider5 {
+    top: 83.33%;
+}
+
+.divider-text {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    z-index: 101;
+}
+
+.hidden-frame .divider-text0 {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden-frame .divider-text1 {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden-frame .divider-text2 {
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden-frame .divider-text3 {
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden-frame .divider-text4 {
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden-frame .divider-text5 {
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zero-text {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.top .text {
+    position: absolute;
+    top: 5%;
+}
+
+.bottom .text {
+    position: absolute;
+    top: 7%;
+}
+
+#section4 {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 0, 0);
+}
+
+#section4 .frame {
+    background-color: rgb(202, 0, 0);
+    padding: 10px;
+    border: none;
+}
+
+#section4 img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border: 5px solid rgb(202, 0, 0);
+}
+
+#section5 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 0, 0);  /* 배경색을 다른 섹션들과 같은 색으로 설정 */
+    margin-top: 10px; /* 원하시면 간격을 조정 */
+  }
+  
+  #section5 .frame {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 0, 0);  /* 프레임의 배경색 설정 */
+    border: 5px solid rgb(202, 0, 0);  /* 흰색 프레임을 빨간색으로 변경 */
+}
+
+  
+  #section5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지를 프레임에 맞게 크기 조정 */
+  }
+  
+
+#section2 .frame.t2-frame {
+    height: 50vh;
+    position: relative;
+    width: 84%;
+    background-color: white;
+}
+
+#section2 .frame.t2-frame .red-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(202, 0, 0);
+}
+
+#section2 .frame.t2-frame .stroke {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+#section2 .frame.t2-frame .stroke:nth-child(3) {
+    top: 25%;
+}
+
+#section2 .frame.t2-frame .stroke:nth-child(4) {
+    top: 37.5%;
+}
+
+#section2 .frame.t2-frame .stroke:nth-child(5) {
+    top: 50%;
+}
+
+#section2 .frame.t2-frame .stroke:nth-child(6) {
+    top: 62.5%;
+}
+
+#section2 .frame.t2-frame .stroke:nth-child(7) {
+    top: 75%;
+}
+
+#section2 .frame.t2-frame .stroke:nth-child(8) {
+    top: 87.5%;
+}
+
+/* 기본 .text 스타일 */
+#section2 .frame.t2-frame .text {
+    position: absolute;
+    font-size: 1.5rem;
+    color: black; /* 기본 색상은 검정 */
+    left: 5%;
+}
+
+/* "학력" 텍스트 색상: 흰색 */
+#section2 .frame.t2-frame .title-text {
+    color: white; /* 학력 텍스트는 흰색 */
+}
